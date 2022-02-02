@@ -1,26 +1,15 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-
-h2 {
-  color: blue;
-}
-
-.container {
-  background: red;
-  color: white;
-}
-
-#simpletext {
-  font-size: 32px;
+.box {
+  height: 100px;
+  border: solid 1px black;
   background-color: pink;
+  color: white;
+  text-align: center;
 }
-
-div {
-  width: 300px;
-  background-color: yellow;
-}
-div p {
-  background-color: blue;
+.box .box-item {
+  background-color: green;
+  border: solid 1px white;
   color: white;
 }
