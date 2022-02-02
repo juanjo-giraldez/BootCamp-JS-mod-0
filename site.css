@@ -1,15 +1,18 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-}
-.box {
-  height: 100px;
-  border: solid 1px black;
-  background-color: pink;
-  color: white;
+  }
+  /* diff */
+  .shopping-header > h2 {
+  margin: auto;
+  padding: 20px;
   text-align: center;
-}
-.box .box-item {
-  background-color: green;
-  border: solid 1px white;
-  color: white;
-}
+  }
+  .shopping-item {
+  padding: 32px;
+  border-radius:3px;
+  border:1px solid #dcdcdc;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  }
+  /* diff */
