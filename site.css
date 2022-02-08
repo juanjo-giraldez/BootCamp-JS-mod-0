@@ -10,31 +10,51 @@ body {
   padding: 32px;
   border-radius: 3px;
   border: 1px solid #dcdcdc;
-  display: flex;
   justify-content: space-between;
   margin-bottom: 8px;
 }
-.responsive {
-  max-width: 50%;
-  width: 100px;
+
+.shopping-selection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 16px;
+  width: 100%;
+}
+.shopping-selection__input {
+  order: 1;
+  text-align: center;
+}
+.shopping-selection__responsive {
+  width: 100%;
   height: auto;
+  margin-bottom: 16px;
 }
-.item-entry {
-  width: 300px;
+.shopping-item-entry {
+  align-self: center;
+  margin-bottom: 16px;
 }
-.item-name {
+
+.shopping-item-entry__name {
   text-transform: uppercase;
   color: #666666;
   font-size: 20px;
   font-weight: bold;
 }
-.item-description {
-  text-transform: lowercase;
-  font-size: 16px;
+.shopping-item-entry__description {
   display: block;
+  font-size: 16px;
+  text-transform: lowercase;
 }
 /* diff */
-.quantity {
+
+.shopping-num {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.shopping-num__quantity {
   box-shadow: inset 0px 1px 0px 0px #ffffff;
   background-color: transparent;
   border-radius: 3px;
@@ -46,23 +66,25 @@ body {
   padding: 6px 12px;
   text-shadow: 0px 1px 0px #ffffff;
 }
-.quantity:active {
+.shopping-num__quantity:active {
   position: relative;
   top: 1px;
 }
 /* diff */
-.quantity-ammount {
+.shopping-num__quantity-amount {
   color: #666666;
   font-size: 16px;
   font-weight: bold;
   margin-left: 16px;
   margin-right: 16px;
 }
-.value {
+.shopping-num__value {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 500;
   font-size: 24px;
   min-width: 100px;
+  text-align: center;
+  align-self: center;
 }
 .shopping-footer {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -71,11 +93,40 @@ body {
   font-weight: 700;
   font-size: 30px;
 }
+
+.shopping-footer-total {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* diff */
+
 @media (min-width: 768px) {
-  .item-entry {
+  .shopping-selection__input {
     display: flex;
-    align-items: baseline;
-    justify-content: space-evenly;
+    align-self: center;
+    order: 0;
+  }
+  .shopping-item {
+    display: flex;
+  }
+  .shopping-item-entry {
+    width: 300px;
+    margin-bottom: 0px;
+  }
+  .shopping-selection {
+    max-width: calc(23%);
+    flex-direction: row;
+    margin-bottom: 0px;
+    justify-content: space-between;
+  }
+
+  .shopping-num {
+    max-width: calc(30%);
+  }
+  .shopping-selection__responsive {
+    max-width: 50%;
+    width: 100px;
+    margin-bottom: 0px;
   }
 }
-/* diff */
