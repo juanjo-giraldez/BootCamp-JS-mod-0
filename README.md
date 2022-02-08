@@ -1,3 +1,3 @@
 # BootCamp-JS-mod-0
 
-Bootcamp Javascript, Practica modulo 0 . carrito de compra , responsive y desktop vista 
+Bootcamp Javascript, Practical module 0 . shopping cart , responsive and desktop view 
